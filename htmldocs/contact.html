@@ -4,13 +4,58 @@
 <head>
 	<title>Kontakt</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+	<header class="header">
+		<p class="ebba">Ebba Petrén</p>
+		<nav class="navbar">
+			<a href="../index.html">Start</a>
+			<a href="#">Kontakt</a>
+			<a href="works.html">Sceniska verk</a>
+			<a href="text.html">Text</a>
+			<a href="sound.html">Ljud och röst</a>
+			<a href="teach.html">Undervisning</a>
+		</nav>
+	</header>
 
+	<main>
+		<h1>Kontakta mig</h1>
+		<section class="contact-me">
+			<p>Här kan du skicka ett mail til mig. <br>
+				Det går direkt till min inkorg
+				och jag svarar inom två arbetsdagar!</p>
+		</section>
+		<form action="mailto:ebba.petren@gmail.com" method="POST">
+			<label for="name">Ditt namn:</label>
+			<br>
+			<input type="text" id="name" required>
+			<br>
+			<label for="email">Din e-mail:</label>
+			<br>
+			<input type="email" id="email" required>
+			<br>
+			<label for="message">Skriv ditt mail här:</label>
+			<br>
+			<input type="textarea" id="message" required>
+			<br>
+			<button type="submit">Skicka!</button>
+		</form>
+		<aside class="side-image">
+			<img src="../media/Bilder/Ska╠êrmavbild 2020-05-15 kl. 09.46.41.png" alt="">
+		</aside>
+	</main>
+
+	<footer class="footer">
+		<a href="">Instagram</a>
+		<a href="">LinkedIn</a>
+		<a href="">CV</a>
+		<a href="">Epost</a>
+		<a href="">Telefon</a>
+	</footer>
 </body>
 
 </html>
