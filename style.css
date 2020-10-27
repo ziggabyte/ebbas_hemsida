@@ -1,6 +1,9 @@
 :root {
-    --nav-bg-color: lightsalmon;;
+    --foot-bg-color:  #d9bf08ff;
     --body-bg-color:white;
+    --area-bg-color:#e0aea3ff;
+    --h1-color: #e0aea3ff;
+    --h1-shade-color: #d9bf08ff;
     --main-padding: 2vh;
 }
 
@@ -26,6 +29,7 @@ body {
 
 h1{
     font-family: "Yatra One", serif;
+    color: var(--h1-color);
     margin: 0 4vh 0 0;
 }
 
@@ -45,6 +49,13 @@ h2 {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: var(--area-bg-color);
+    width: 100%;
+    margin: 2vh 0 0 0;
+    padding: 2vh;
 }
 
 main {
@@ -75,7 +86,7 @@ footer{
     flex-direction: column;
     align-items: center;
     height: 10vh;
-    background-color: var(--nav-bg-color);
+    background-color: var(--foot-bg-color);
     grid-area: foot;
 }
 
