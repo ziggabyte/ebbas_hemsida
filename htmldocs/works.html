@@ -4,31 +4,41 @@
 <head>
 	<title>Sceniska verk</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="../style.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yatra+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header class="header">
-		<p class="ebba">Ebba Petrén</p>
-		<nav class="navbar">
-			<a href="../index.html">Start</a>
-			<a href="contact.html">Kontakt</a>
-			<a href="#">Sceniska verk</a>
-			<a href="text.html">Text</a>
-			<a href="sound.html">Ljud och röst</a>
-			<a href="teach.html">Undervisning</a>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<h1>Ebba Petrén</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				<a class="nav-item nav-link active" href="../index.html">Start <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="contact.html">Kontakt</a>
+				<a class="nav-item nav-link" href="#">Sceniska verk</a>
+				<a class="nav-item nav-link" href="text.html">Text</a>
+				<a class="nav-item nav-link" href="sound.html">Ljud och röst</a>
+				<a class="nav-item nav-link" href="teach.html">Undervisning</a>
+			  </div>
+			</div>
+		  </nav>
 	</header>
 	<main>
-		<h1>Sceniska verk</h1>
-		<section class="all-works">
+		<h2>Sceniska verk</h2>
+		<section class="flex-container">
 			För verkslista, se [cv]
 			<br>
-			<article class="work-item">
+			<article class="flex-item">
 				<header>
-					<h2>Nyxxx</h2>
+					<h3>Nyxxx</h3>
 				</header>
 				<p>
 					<a href="http://nyxxx.se">Nyxxx</a> är ett scenkonstkollektiv som jag gör
@@ -38,18 +48,18 @@
 				width="640" height="360" frameborder="0" allowfullscreen></iframe>
 			</article>
 			<br>
-			<article class="work-item">
+			<article class="flex-item">
 				<header>
-					<h2>Skärmteatern</h2>
+					<h3>Skärmteatern</h3>
 				</header>
 				<p>Föreställningar för zoom.</p>
 				<iframe title="vimeo-player" src="https://player.vimeo.com/video/425973705" 
 				width="640" height="360" frameborder="0" allowfullscreen></iframe>
 			</article>
 			<br>
-			<article class="work-item">
+			<article class="flex-item">
 				<header>
-					<h2>Music & Touch</h2>
+					<h3>Music & Touch</h3>
 				</header>
 				<p>
 					Musik av beröring.
@@ -58,18 +68,30 @@
 				</p>
 			</article>
 		</section>
-		<aside class="side-image">
-			<img src="../media/Bilder/Ska╠êrmavbild 2020-05-15 kl. 09.46.41.png" alt="">
-		</aside>
 	</main>
-
+	<aside class="side-image">
+		<img src="../media/images/performance/12talande2.png" alt="">
+	</aside>
 	<footer class="footer">
-		<a href="">Instagram</a>
-		<a href="">LinkedIn</a>
-		<a href="">CV</a>
-		<a href="">Epost</a>
-		<a href="">Telefon</a>
+		<section class="footer-links">
+			<a href="https://instagram.com/ebbap3n" target="_blank"><img src="/media/icons/1384020-social-media/png/011-instagram.png" alt="Instagram"></a>
+			<a href="https://instagram.com/ebbap3n" target="_blank"><img src="/media/icons/1384020-social-media/png/010-linkedin.png" alt="LinkedIn"></a>
+			<a href="/media/cv.pdf" target="_blank"><img src="/media/icons/1077028-social-network/png/045-suitcase.png" alt="CV"></a>
+			<a href="mailto:ebba.petren@gmail.com" target="_blank"><img src="/media/icons/1077028-social-network/png/043-email.png" alt="email"></a>
+			<a href="#" target="_blank"><img src="/media/icons/1077028-social-network/png/027-whatsapp.png" alt="Whatsapp"></a>
+		</section>
+		<section class="footer-text">
+			<p>Copyright 2020 Ebba Petrén</p>
+			<p></p>
+		</section>
 	</footer>
+	<!--För bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

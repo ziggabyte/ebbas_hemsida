@@ -1,0 +1,99 @@
+:root {
+    --nav-bg-color: lightsalmon;;
+    --body-bg-color:white;
+    --main-padding: 2vh;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: grid;
+    grid-template-areas:"head head"
+                        "aside aside"
+                        "main main"
+                        "foot foot";
+}
+
+h1{
+    font-family: "Yatra One", serif;
+    margin: 0 4vh 0 0;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    padding: 2vh 0 ;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 5em;
+    grid-area: head;
+    background-color: var(--head-nav-bg-color);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    background-color: transparent;
+    margin: var(--main-padding);
+    grid-area: main;
+}
+
+iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+aside {
+    grid-area: aside;
+    margin: 2vh;
+}
+
+aside img {
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--nav-bg-color);
+    grid-area: foot;
+}
+
+.footer-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2vh;
+
+}
+
+.footer-text {
+    width: 100%;
+    height: 5vh;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+a img {
+    height: 3vh;
+}

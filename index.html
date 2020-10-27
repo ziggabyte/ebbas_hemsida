@@ -4,42 +4,55 @@
 <head>
 	<title>Ebba Petrén</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Yatra+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	
 	<header class="header">
-		<p class="ebba">Ebba Petrén</p>
-		<nav class="navbar">
-			<a href="#">Start</a>
-			<a href="htmldocs/contact.html">Kontakt</a>
-			<a href="htmldocs/works.html">Sceniska verk</a>
-			<a href="htmldocs/text.html">Text</a>
-			<a href="htmldocs/sound.html">Ljud och röst</a>
-			<a href="htmldocs/teach.html">Undervisning</a>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<h1>Ebba Petrén</h1>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav">
+				<a class="nav-item nav-link active" href="#">Start <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="contact.html">Kontakt</a>
+				<a class="nav-item nav-link" href="works.html">Sceniska verk</a>
+				<a class="nav-item nav-link" href="text.html">Text</a>
+				<a class="nav-item nav-link" href="sound.html">Ljud och röst</a>
+				<a class="nav-item nav-link" href="teach.html">Undervisning</a>
+			  </div>
+			</div>
+		  </nav>
 	</header>
 
 	<main>
-		<h1>Ebba Petrén</h1>
-		<section class="about-short">
-			Regissör, dramatiker, scenkonstnär
-			Född 1988. Baserad i Stockholm och Ljusne.
-			Epost: ebba.petren[a]gmail.com
-			Insta: ebbap3n
-			[cv in english, skickar jag separat på mail]
+		<section class="about">
+			<section class="about-short">
+				Regissör, dramatiker, scenkonstnär
+				Född 1988. Baserad i Stockholm och Ljusne.
+				Epost: ebba.petren[a]gmail.com
+				Insta: ebbap3n
+				[cv in english, skickar jag separat på mail]
+			</section>
+			<section class="about-long">
+				Jag skapar scenkonstverk, skriver text, producerar ljud och undervisar.
+				Jag arbetar utforskande med publikensroll och plats i scenkonsthändelsen.
+				Jag är intresserad av översättningar och glapp mellan inre och yttre verkligheter.
+				Jag är förankrad i kollektiva arbetsmetoder. Är även verksam som dramaturg, performer,
+				inläsare och klippare i andras projekt.
+			</section>
 		</section>
-		<section class="about-long">
-			Jag skapar scenkonstverk, skriver text, producerar ljud och undervisar.
-			Jag arbetar utforskande med publikensroll och plats i scenkonsthändelsen.
-			Jag är intresserad av översättningar och glapp mellan inre och yttre verkligheter.
-			Jag är förankrad i kollektiva arbetsmetoder. Är även verksam som dramaturg, performer,
-			inläsare och klippare i andras projekt.
-		</section>
-		<section class="news">
-			<article class="news-item">
+
+		<section class="flex-container">
+			<article class="flex-item">
 				<header>
 					<h2>
 						Hösten 2020...
@@ -48,7 +61,7 @@
 				<p>...studerar jag sång, musikteori och ljudproduktion inför kommande arbete.
 				</p>
 			</article>
-			<article class="news-item">
+			<article class="flex-item">
 				<header>
 					<h2>Hör så tyst det är</h2>
 				</header>
@@ -60,12 +73,12 @@
 					av Nyxxx spelas just nu på Regionteatern Blekinge Kronoberg
 					Premiär 17 september 2020. Spelar hösten 2020 och våren 2021.
 				</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/vWPopPeNDN0" frameborder="0"
+				<iframe src="https://www.youtube.com/embed/vWPopPeNDN0" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen>
 				</iframe>
 			</article>
-			<article class="news-item">
+			<article class="flex-item">
 				<header>
 					<h2>Tal till relationen</h2>
 				</header>
@@ -73,22 +86,41 @@
 					av Ebba Petrén och Alexandra Loonin med Scensveriges medlemmar finns nu online.
 					Premiär maj 2020.
 				</p>
-				<iframe title="vimeo-player" src="https://player.vimeo.com/video/425587339" width="640" height="360"
-					frameborder="0" allowfullscreen>
+				<iframe title="vimeo-player" src="https://player.vimeo.com/video/425587339" frameborder="0"
+					allowfullscreen>
 				</iframe>
 			</article>
 		</section>
-		<aside class="side-image">
-			<img src="media/Bilder/ebbapetren.jpg" alt="Ebba Petrén">
-		</aside>
 	</main>
+	<aside class="side-image">
+		<img src="media/images/portraits/ebbabw.jpg" alt="Ebba Petrén">
+	</aside>
 	<footer class="footer">
-		<a href="">Instagram</a>
-		<a href="">LinkedIn</a>
-		<a href="">CV</a>
-		<a href="">Epost</a>
-		<a href="">Telefon</a>
+		<section class="footer-links">
+			<a href="https://instagram.com/ebbap3n" target="_blank"><img
+					src="/media/icons/1384020-social-media/png/011-instagram.png" alt="Instagram"></a>
+			<a href="https://instagram.com/ebbap3n" target="_blank"><img
+					src="/media/icons/1384020-social-media/png/010-linkedin.png" alt="LinkedIn"></a>
+			<a href="/media/cv.pdf" target="_blank"><img src="/media/icons/1077028-social-network/png/045-suitcase.png"
+					alt="CV"></a>
+			<a href="mailto:ebba.petren@gmail.com" target="_blank"><img
+					src="/media/icons/1077028-social-network/png/043-email.png" alt="email"></a>
+			<a href="#" target="_blank"><img src="/media/icons/1077028-social-network/png/027-whatsapp.png"
+					alt="Whatsapp"></a>
+		</section>
+		<section class="footer-text">
+			<p>Copyright 2020 Ebba Petrén</p>
+			<p></p>
+		</section>
 	</footer>
+
+	<!--För bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
