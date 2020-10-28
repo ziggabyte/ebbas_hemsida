@@ -3,8 +3,11 @@
     --body-bg-color:white;
     --area-bg-color:#e0aea3ff;
     --h1-color: #e0aea3ff;
-    --h1-shade-color: #d9bf08ff;
+    --contact-bg-color: #eae1d8ff;
     --main-padding: 2vh;
+    --h1-font: "Yatra One", serif;
+    --h2-font: "Yatra One", serif;
+    --body-font: Montserrat, sans-serif;
 }
 
 * {
@@ -28,13 +31,15 @@ body {
 }
 
 h1{
-    font-family: "Yatra One", serif;
+    font-family: var(--h1-font);
     color: var(--h1-color);
     margin: 0 4vh 0 0;
 }
 
 h2 {
-    font-family: Montserrat, sans-serif;
+    font-family: var(--h2-font);
+    color: var(--foot-bg-color);
+    font-size: 3em;
     padding: 2vh 0 ;
 }
 
@@ -77,6 +82,33 @@ aside {
 
 aside img {
     width: 100%;
+}
+
+input {
+    height: 2em;
+    background-color: var(--body-bg-color);
+    border: none;
+    border-radius: 1vh;
+    margin: 1vh 0;
+    padding: 0.25em;
+}
+
+textarea {
+    background-color: var(--body-bg-color);
+    border: none;
+    border-radius: 1vh;
+    margin: 1vh 0;
+    padding: 0.25em;
+}
+
+form button {
+    width: 5em;
+    height: 2em;
+    margin: 1vh 0;
+    font-size: 0.75em;
+    border: none;
+    border-radius: 1vh;
+    background-color: var(--contact-bg-color)
 }
 
 footer{
