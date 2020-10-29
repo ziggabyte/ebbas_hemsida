@@ -1,18 +1,18 @@
 :root {
-    --foot-bg-color:  #d9bf08ff;
-    --body-bg-color:white;
-    --area-bg-color:#e0aea3ff;
+    --foot-bg-color: #d9bf08ff;
+    --body-bg-color: white;
+    --area-bg-color: #e0aea3ff;
     --h1-color: #e0aea3ff;
     --contact-bg-color: #eae1d8ff;
     --main-padding: 2vh;
     --h1-font: "Yatra One", serif;
-    --h2-h3-font: "Playfair Display", serif;
+    --h2-h3-font: Montserrat, sans-serif;
     --body-font: Montserrat, sans-serif;
 }
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -23,28 +23,106 @@ html, body {
 
 body {
     background-color: var(--body-bg-color);
-    display: grid;
-    grid-template-areas:"head head"
-                        "aside aside"
-                        "main main"
-                        "foot foot";
 }
 
-h1{
+main {
+    display: grid;
+    grid-template-areas: "head head" "image image" "intro intro" "content content" "foot foot";
+    background-color: var(--body-bg-color);
+}
+
+/*NAMNLOGOTYP I HEADER*/
+
+h1 {
     font-family: var(--h1-font);
     color: var(--h1-color);
     margin: 0 4vh 0 0;
 }
 
+/*RUBRIKER TILL TEXTER PÅ ALLA SIDOR*/
+
 h2 {
     font-family: var(--h2-h3-font);
-    font-weight: bold;
-    font-size: 3em;
-    padding: 2vh 0 ;
+    font-size: 2.5em;
 }
 
 h3 {
     font-family: var(--h2-h3-font);
+}
+
+/*FOOTERN*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--foot-bg-color);
+    grid-area: foot;
+}
+
+/*INBÄDDAD VIDEO*/
+
+iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*STORA HUVUDBILDERNA*/
+
+aside {
+    width: 100%;
+    grid-area: image;
+    overflow: hidden;
+}
+
+aside img {
+    width: 110%;
+}
+
+/*IKONLÄNKAR I FOOTERN*/
+
+a img {
+    height: 3vh;
+}
+
+/*KONTAKTFORMULÄRET*/
+
+input {
+    height: 2em;
+    background-color: var(--body-bg-color);
+    border: none;
+    margin: 1vh 0;
+    padding: 0.25em;
+}
+
+textarea {
+    background-color: var(--body-bg-color);
+    border: none;
+    margin: 1vh 0;
+    padding: 0.25em;
+}
+
+form button {
+    width: 5em;
+    height: 2em;
+    margin: 1vh 0;
+    font-size: 0.75em;
+    border: none;
+    background-color: var(--contact-bg-color)
+}
+
+/*-----------KLASSER----------*/
+
+.content {
+    grid-area: content;
+}
+
+.intro {
+    grid-area: intro;
 }
 
 .header {
@@ -55,15 +133,17 @@ h3 {
     background-color: var(--head-nav-bg-color);
 }
 
+/*SCENISKA VERK, TEXTER, AKTUELLT*/
+
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .flex-item {
     background-color: var(--area-bg-color);
     width: 100%;
-    margin: 2vh 0 0 0;
     padding: 2vh;
 }
 
@@ -71,12 +151,12 @@ h3 {
     width: 100%;
 }
 
+/*LOGOTYPER TILL SAMARBETSPARTNERS*/
+
 .mini-flex-container {
-    width: 75%;
     display: flex;
     justify-content: space-around;
-    align-items: center;;
-    width: 100%;
+    align-items: center;
     height: 5em;
     margin-top: 5vh;
     background-color: var(--contact-bg-color);
@@ -86,6 +166,8 @@ h3 {
     max-height: 0.5em;
     margin: .5em;
 }
+
+/*SKRYTBOXARNA*/
 
 .quote-box {
     width: 75%;
@@ -100,76 +182,18 @@ h3 {
 
 .quote {
     font-family: var(--h2-h3-font);
-    font-size: 4em;
+    font-size: 2em;
     font-style: italic;
     padding: 2vh;
 }
 
-main {
-    background-color: transparent;
-    margin: var(--main-padding);
-    grid-area: main;
-}
-
-iframe {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-aside {
-    grid-area: aside;
-    margin: 2vh;
-}
-
-aside img {
-    width: 100%;
-}
-
-input {
-    height: 2em;
-    background-color: var(--body-bg-color);
-    border: none;
-    border-radius: 1vh;
-    margin: 1vh 0;
-    padding: 0.25em;
-}
-
-textarea {
-    background-color: var(--body-bg-color);
-    border: none;
-    border-radius: 1vh;
-    margin: 1vh 0;
-    padding: 0.25em;
-}
-
-form button {
-    width: 5em;
-    height: 2em;
-    margin: 1vh 0;
-    font-size: 0.75em;
-    border: none;
-    border-radius: 1vh;
-    background-color: var(--contact-bg-color)
-}
-
-footer{
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    height: 10vh;
-    background-color: var(--foot-bg-color);
-    grid-area: foot;
-}
+/*FOOTER*/
 
 .footer-links {
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin: 2vh;
-
 }
 
 .footer-text {
@@ -179,6 +203,90 @@ footer{
     text-align: center;
 }
 
-a img {
-    height: 3vh;
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-gap: 2vh;
+        grid-template-areas: "head head" "intro image" "content content" "foot foot";
+    }
+    .flex-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .half-box {
+        width: 45%;
+    }
+    .third-box {
+        width: 30%;
+    }
+
+    aside {
+        width: 60vh;
+    }
+    aside img {
+        width: 100%;
+    }
+    .start-pad-marg {
+        padding-left: 7vh;
+        padding-top: 12vh;
+    }
+    .
+    h2-xl {
+        font-size: 2em;
+    }
+    .navbar-toggler {
+        margin-left: 18rem;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-gap: 2vh;
+        grid-template-areas: "head head" "intro image" "content content" "foot foot";
+    }
+    aside {
+        width: 800px;
+    }
+    aside img {
+        width: 100%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .half-box {
+        width: 45%;
+    }
+    .third-box {
+        width: 30%;
+    }
+    .start-pad-marg {
+        padding-left: 10vh;
+        padding-top: 15vh;
+    }
+    .contact-pad-marg {
+        width: 100%;
+        padding: 5vh;
+        margin: 0 2vh 2vh 2vh;
+    }
+    .side-image {
+        padding: 2vh;
+    }
+    .h2-xl {
+        font-weight: bold;
+        font-size: 3em;
+    }
+    .quote {
+        font-size: 4em;
+    }
 }
