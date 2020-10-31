@@ -115,6 +115,10 @@ form button {
     background-color: var(--contact-bg-color)
 }
 
+audio {
+    margin: 3vh;
+}
+
 /*-----------KLASSER----------*/
 
 .content {
@@ -203,7 +207,7 @@ form button {
     text-align: center;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* MEDIUM devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
     main {
@@ -221,7 +225,6 @@ form button {
     .third-box {
         width: 30%;
     }
-
     aside {
         width: 60vh;
     }
@@ -232,17 +235,15 @@ form button {
         padding-left: 7vh;
         padding-top: 12vh;
     }
-    .
-    h2-xl {
+    . h2-xl {
         font-size: 2em;
     }
     .navbar-toggler {
         margin-left: 18rem;
     }
-    
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* LARGE devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
     main {
