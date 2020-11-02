@@ -2,8 +2,13 @@
     --foot-bg-color: #d9bf08ff;
     --body-bg-color: white;
     --area-bg-color: #e0aea3ff;
+    --body-text-color: rgb(27, 26, 25);
     --h1-color: #e0aea3ff;
     --contact-bg-color: #eae1d8ff;
+    --link-color: #0062abff;
+    --active-link-color: #f63d28ff;
+    --hover-link-color: #eae1d8ff;
+    --visited-link-color: #f63d28ff;
     --main-padding: 2vh;
     --h1-font: "Yatra One", serif;
     --h2-h3-font: Montserrat, sans-serif;
@@ -23,12 +28,35 @@ html, body {
 
 body {
     background-color: var(--body-bg-color);
+    color: var(--body-text-color);
 }
 
 main {
     display: grid;
     grid-template-areas: "head head" "image image" "intro intro" "content content" "foot foot";
     background-color: var(--body-bg-color);
+}
+
+/*LÄNKAR I HELA*/
+
+a:link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--active-link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-link-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--visited-link-color);
+    text-decoration: none;
 }
 
 /*NAMNLOGOTYP I HEADER*/
@@ -77,10 +105,11 @@ aside {
     width: 100%;
     grid-area: image;
     overflow: hidden;
+    margin: 5vh 0;
 }
 
 aside img {
-    width: 110%;
+    width: 100%;
 }
 
 /*IKONLÄNKAR I FOOTERN*/
@@ -90,6 +119,11 @@ a img {
 }
 
 /*KONTAKTFORMULÄRET*/
+
+form {
+    background-color: var(--area-bg-color);
+    padding: 5vh;
+}
 
 input {
     height: 2em;
@@ -115,6 +149,8 @@ form button {
     background-color: var(--contact-bg-color)
 }
 
+/*LJUDSPELAREN*/
+
 audio {
     margin: 3vh;
 }
@@ -127,6 +163,7 @@ audio {
 
 .intro {
     grid-area: intro;
+    margin-left: 5vh;
 }
 
 .header {
@@ -137,7 +174,34 @@ audio {
     background-color: var(--head-nav-bg-color);
 }
 
-/*SCENISKA VERK, TEXTER, AKTUELLT*/
+.teach {
+    margin: 5vh;
+}
+
+.short-info {
+    margin: 2vh;
+}
+
+.short-info section{
+    margin: 2vh;
+}
+
+.middle-headline {
+    margin: 5vh 5vh;
+}
+
+/*TEXT I TEXT-EXEMPLEN*/
+
+.subhead {
+    font-style: italic;
+}
+
+.excerpt {
+    padding-left: 2vh;
+    padding-right: 5vh;
+}
+
+/*RUTOR MED SCENISKA VERK, TEXTER, AKTUELLT*/
 
 .flex-container {
     display: flex;
@@ -148,47 +212,12 @@ audio {
 .flex-item {
     background-color: var(--area-bg-color);
     width: 100%;
-    padding: 2vh;
+    margin-bottom: 5vh;
+    padding: 5vh;
 }
 
 .flex-item img {
     width: 100%;
-}
-
-/*LOGOTYPER TILL SAMARBETSPARTNERS*/
-
-.mini-flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 5em;
-    margin-top: 5vh;
-    background-color: var(--contact-bg-color);
-}
-
-.mini-flex-item {
-    max-height: 0.5em;
-    margin: .5em;
-}
-
-/*SKRYTBOXARNA*/
-
-.quote-box {
-    width: 75%;
-    background-color: var(--contact-bg-color);
-    margin: 5vh 0 3vh 7vh;
-    padding: 2vh;
-}
-
-.quote-box p {
-    padding-left: 4vh;
-}
-
-.quote {
-    font-family: var(--h2-h3-font);
-    font-size: 2em;
-    font-style: italic;
-    padding: 2vh;
 }
 
 /*FOOTER*/
@@ -202,9 +231,11 @@ audio {
 
 .footer-text {
     width: 100%;
-    height: 5vh;
+    height: 20vh;
     font-size: 0.75em;
     text-align: center;
+    background-color: var(--foot-bg-color);
+
 }
 
 /* MEDIUM devices (landscape tablets, 768px and up) */
@@ -212,34 +243,63 @@ audio {
 @media only screen and (min-width: 768px) {
     main {
         display: grid;
-        grid-gap: 2vh;
         grid-template-areas: "head head" "intro image" "content content" "foot foot";
+    }
+    .first-box {
+        margin-top: 5vh;
+    }
+   
+    form {
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 12vh;
+        margin: 2vh 5vh;
+        background-color: var(--area-bg-color)
+    }
+    input {
+        margin: 1.5vh 0;
+    }
+    textarea {
+        margin: 1.5vh 0;
+    }
+    form button {
+        margin: 1.5vh 0;
     }
     .flex-container {
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
     .half-box {
         width: 45%;
+        margin-bottom: 5vh;
     }
     .third-box {
         width: 30%;
+        margin-bottom: 5vh;
     }
-    aside {
+    .intro {
         width: 60vh;
     }
-    aside img {
-        width: 100%;
+    aside {
+        width: 70vh;
     }
     .start-pad-marg {
-        padding-left: 7vh;
         padding-top: 12vh;
     }
-    . h2-xl {
+    .h2-xl {
         font-size: 2em;
     }
     .navbar-toggler {
         margin-left: 18rem;
+    }
+    audio {
+        margin: 5vh 0;
+    }
+    .middle-headline {
+        margin: 2vh 5vh;
+    }
+    .short-info {
+        background-color: var(--contact-bg-color);
     }
 }
 
@@ -253,23 +313,21 @@ audio {
         grid-template-areas: "head head" "intro image" "content content" "foot foot";
     }
     aside {
-        width: 800px;
+        width: 100vh;
+        margin-right: 2vh;
     }
     aside img {
         width: 100%;
     }
     .intro {
-        width: 100%;
+        padding-top: 10vh;
     }
     .flex-container {
         flex-direction: row;
         flex-wrap: wrap;
     }
     .half-box {
-        width: 45%;
-    }
-    .third-box {
-        width: 30%;
+        padding: 3vh;
     }
     .start-pad-marg {
         padding-left: 10vh;
@@ -289,5 +347,11 @@ audio {
     }
     .quote {
         font-size: 4em;
+    }
+    .short-info {
+        margin: 5vh;
+    }
+    .middle-headline{
+        margin-bottom: 5vh;
     }
 }
