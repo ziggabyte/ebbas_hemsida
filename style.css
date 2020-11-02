@@ -309,7 +309,6 @@ audio {
 @media only screen and (min-width: 992px) {
     main {
         display: grid;
-        grid-template-columns: 1fr, 1fr;
         grid-gap: 2vh;
         grid-template-areas: "head head" "intro image" "content content" "foot foot";
     }
