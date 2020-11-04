@@ -9,7 +9,6 @@
     --active-link-color: #f63d28ff;
     --hover-link-color: #eae1d8ff;
     --visited-link-color: #f63d28ff;
-    --main-padding: 2vh;
     --h1-font: "Yatra One", serif;
     --h2-h3-font: Montserrat, sans-serif;
     --body-font: Montserrat, sans-serif;
@@ -86,7 +85,7 @@ footer {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    height: 10vh;
+    height: 25vh;
     background-color: var(--foot-bg-color);
     grid-area: foot;
 }
@@ -225,6 +224,7 @@ audio {
 
 .footer-links {
     display: flex;
+    height: 10vh;
     width: 100%;
     justify-content: space-around;
     margin: 2vh;
@@ -232,7 +232,7 @@ audio {
 
 .footer-text {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     font-size: 0.75em;
     text-align: center;
     background-color: var(--foot-bg-color);
